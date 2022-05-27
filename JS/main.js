@@ -38,74 +38,73 @@ storage();
 });
 });
 
-
-  const agregarProducto = (idProd) => {
-    const art = productos.find((prod) => prod.id === idProd);
-    art.cantidad >= 1
-    const existe = carrito.some((prod) => prod.id === idProd);
-    if (existe) {
-       carrito.map((producto) => {
-        if (producto.id === idProd) {
-          producto.cantidad++;
-          //return producto;
-        } else {
-        //  return producto;
-        }
-      });
-    } else {
-      carrito.push(art);
-    }
-    actualizarCarrito();
-    swal({
-      position: "top-end",
-      icon: "success",
-      title: "Producto agregado",
-      timer: 1100,
-    })
-  }
-  
-  const borrarDelCarrito = (idProd) => {
-    
-    carrito.map(c =>{
-      if(c.id === idProd && c.cantidad >= 0 ){
-        c.cantidad --;
+const agregarProducto = (idProd) => {
+  const art = productos.find((prod) => prod.id === idProd);
+  art.cantidad >= 1
+  const existe = carrito.some((prod) => prod.id === idProd);
+  if (existe) {
+     carrito.map((producto) => {
+      if (producto.id === idProd) {
+        producto.cantidad++;
+        //return producto;
+      } else {
+      //  return producto;
       }
-    })
-    const item = carrito.find((prod) => prod.id === idProd);
-    if(item.cantidad === 0){
-      const index = carrito.indexOf(item);
-      carrito.splice(index, 1);
+    });
+  } else {
+    carrito.push(art);
+  }
+  actualizarCarrito();
+  swal({
+    position: "top-end",
+    icon: "success",
+    title: "Producto agregado",
+    timer: 1100,
+  })
+}
+
+const borrarDelCarrito = (idProd) => {
+  
+  carrito.map(c =>{
+    if(c.id === idProd && c.cantidad >= 0 ){
+      c.cantidad --;
     }
-    actualizarCarrito();
+  })
+  const item = carrito.find((prod) => prod.id === idProd);
+  if(item.cantidad === 0){
+    const index = carrito.indexOf(item);
+    carrito.splice(index, 1);
   }
+  actualizarCarrito();
+}
+
+const actualizarCarrito = () => {
   
-  const actualizarCarrito = () => {
-    
-    miModal.innerHTML = ``;
-    carrito.forEach((prod) => {
-      let div = document.createElement("div");
-        div.className = "productoAgregado";
-        div.innerHTML = `
-          <img src="${prod.Img}"</img>
-          <p> ${prod.descripcion}</p>
-          <p>$${prod.precio}</p>
-          <p>${prod.cantidad}</p>
-          <button type="button" class="btnBorrar" id="borrar${prod.id}">  </button>
-      `
-      miModal.append(div);
-      const borrar = document.getElementById(`borrar${prod.id}`)
-      borrar.addEventListener("click", () => {
-        borrarDelCarrito(prod.id);
-      })
+  miModal.innerHTML = ``;
+  carrito.forEach((prod) => {
+    let div = document.createElement("div");
+      div.className = "productoAgregado";
+      div.innerHTML = `
+        <img src="${prod.Img}"</img>
+        <p> ${prod.descripcion}</p>
+        <p>$${prod.precio}</p>
+        <p>${prod.cantidad}</p>
+        <button type="button" class="btnBorrar" id="borrar${prod.id}">  </button>
+    `
+    miModal.append(div);
+    const borrar = document.getElementById(`borrar${prod.id}`)
+    borrar.addEventListener("click", () => {
+      borrarDelCarrito(prod.id);
     })
-  
-    total.innerText = precioFinal();
-    contenedorCarro.innerText = carrito.length;
-  }
-   let storage = () => {
-    localStorage.setItem("carroCompra", JSON.stringify(carrito));
-  } 
-  let precioFinal = () => {
-    let precioGeneral = carrito.reduce((total, producto) => total + (producto.precio * producto.cantidad), 0);
-    return precioGeneral;
-  }
+  })
+
+  total.innerText = precioFinal();
+  contenedorCarro.innerText = carrito.length;
+}
+ let storage = () => {
+  localStorage.setItem("carroCompra", JSON.stringify(carrito));
+} 
+let precioFinal = () => {
+  let precioGeneral = carrito.reduce((total, producto) => total + (producto.precio * producto.cantidad), 0);
+  return precioGeneral;
+}

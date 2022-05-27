@@ -1,0 +1,571 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+  }
+  .navbar {
+    background-color: white;
+  }
+
+  .navbar-collapse {
+    align-items: center;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    -webkit-transition: color 1s linear;
+    transition: color 1s linear;
+  }
+  
+  .nav-link:hover {
+    color: #9b5de5;
+  }
+  
+  ul {
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+  }
+  
+  .conocenos__texto {
+    font-size: 40px;
+  }
+  .h1__header {
+    font-size: 70px;
+    font-weight: bold;
+    background: linear-gradient(#ff70a6, #ffd670);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .button-27 {
+    appearance: none;
+    background-color: #af4d98;
+    border: 2px solid #af4d98;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    width: 13rem;
+    margin-left: 210px;
+    margin-bottom: 75px;
+    margin-top: 20px;
+  }
+  
+  .button-27:disabled {
+    pointer-events: none;
+  }
+  
+  .button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  
+  .footer-basic {
+    padding: 40px 0;
+    background-color: #fadde1;
+    color: #4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  .footer-basic li {
+    padding: 0 10px;
+  }
+  
+  .footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity: 1;
+  }
+  
+  .footer-basic .social {
+    text-align: center;
+    padding-bottom: px;
+    padding-top: 50px;
+  }
+  
+  .footer-basic .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity: 0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+  }
+  
+  .fa-instagram {
+    color: #af4d98;
+  }
+  
+  .fa-facebook {
+    color: #d66ba0;
+  }
+  
+  .fa-at {
+    color: #e5a9a9;
+  }
+  
+  .fa-twitter {
+    color: #f4e4ba;
+  }
+
+main {
+    height: 1000px;
+  }
+  
+/* ----------------------- CARDS ------------------------------------------------------------ */
+
+.card {
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px,
+      rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px,
+      rgb(255, 85, 85) 0px 0px 0px 15px;
+  }
+img.card-img-top {
+  width: 200px;
+  display: block;
+  margin: 0px auto;
+}
+ 
+  /*---------------------- CONTACTO ----------------------------------- */
+
+@media screen and (max-width: 850px) {
+    form {
+      display: block;
+      width: 100%;
+      min-width: 15rem;
+    }
+    .row {
+      padding: 2rem 1rem 1rem 0rem;
+    }
+  }
+  
+  .contacto-principal {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .titulo-contacto {
+    font-weight: 800;
+    background: linear-gradient(#ff70a6, #ffd670);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .contacto-principal {
+    margin: 2rem 1rem 1rem 1rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 1rem 1rem 1rem;
+    flex: 1;
+  }
+  
+  .col {
+    margin: 1rem;
+    flex: 1;
+  }
+  
+  form {
+    max-width: 35rem;
+    min-width: 25rem;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  input {
+    margin-bottom: 2rem;
+    width: 100%;
+    outline: none;
+    border: 2px solid coral;
+    padding: 1rem;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid coral;
+    padding: 1rem;
+  }
+  
+  label,
+  .contacto-principal {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .contacto-principal {
+    text-align: center;
+  }
+  
+  .boton {
+    width: 8rem;
+    border: solid coral;
+    height: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    border-radius: 10px;
+  }
+  
+  .boton:hover {
+    background-color: coral;
+    color: white;
+  }
+  
+  /* ----------- TIENDA ---------------- */
+#contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+  
+  
+#parrafoProductos {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 100px; 
+}
+    
+.modal-header {
+    justify-content: center; 
+}
+    
+.modal-title {
+    font-size: 3vw; 
+}
+    
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+    
+#botonCarro {
+    background-color: white;
+    border: #af4d98 solid 3px;
+    border-color: #d66ba0;
+    border-radius: 2%;
+    max-height: min-content; 
+}
+  
+#imgCarro {
+    max-width: 50%;
+    max-height: 100px; 
+}
+  
+#contenedorCarro {
+    background-image: url("../IMG/listaproductos/carrito-icono.png");
+    max-height: 100%;
+    max-width: 100%; }
+
+#contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.modal-header {
+    justify-content: center; 
+}
+  
+  .modal-title {
+    font-size: 3vw; 
+}
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+  
+  #botonCarro {
+    float: right;
+    background-color: white;
+    border: 2px solid #ff70a6;
+    max-height: min-content; 
+}
+#botonCarro span {
+    color:black;
+}
+  
+  #imgCarro {
+         width: 100px;
+}
+  
+  #contenedorCarro {
+    background-image: url("/IMG/carrito-icono.png");
+    max-height: 100%;
+    max-width: 100%; 
+}
+  
+  .productoAgregado {
+    display: flex;
+    flex-direction: row; 
+}
+  
+  .productoAgregado img {
+    max-width: 20%;
+    max-height: 20%; 
+}
+  
+  .btnBorrar {
+    background-image: url("/IMG/quitar-icono.png");
+    height: 4rem;
+    background-repeat: no-repeat;
+    min-width: 10%; 
+}
+  
+  .productoAgregado {
+    justify-content: space-evenly;
+    justify-items: auto; 
+}
+  
+  #total {
+    margin-right: 30%; 
+}
+
+/* --------------- FOOTER ---------------- */
+.footer-basic{
+  padding: 60px 0;
+  background-color: #fadde1;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a a:hover {
+  opacity: 1;
+}
+
+.footer-basic ul a a:hover li {
+  padding: 0 10px;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-top: 36px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+.fa-instagram {
+  color: #af4d98;
+}
+
+.fa-facebook {
+  color: #d66ba0;
+}
+
+.fa-at {
+  color: #e5a9a9;
+}
+
+.fa-twitter {
+  color: #f4e4ba;
+}
+
+/* ----------- CONTACTO ----------- */
+
+.contacto-principal {
+  text-align: center;
+  margin-top: 50px;
+  margin: 2rem 1rem 1rem 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.titulo-contacto {
+  font-weight: 800;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff70a6), to(#ffd670));
+  background: linear-gradient(#ff70a6, #ffd670);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 1rem 1rem 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.row .col {
+  margin: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+form {
+  max-width: 35rem;
+  min-width: 25rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+input {
+  margin-bottom: 2rem;
+  width: 100%;
+  outline: none;
+  border: 2px solid coral;
+  padding: 1rem;
+}
+
+input,
+textarea {
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid coral;
+  padding: 1rem;
+}
+
+label,
+.contacto-principal {
+  font-family: "Montserrat", sans-serif;
+}
+
+.contacto-principal {
+  text-align: center;
+}
+
+.boton { 
+  width: 8rem;
+  border: solid coral;
+  height: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  border-radius: 10px; 
+  font-size: 10px;
+}
+ 
+.boton .boton:hover {
+  background-color: coral;
+  color: white;
+} 
+
+
+.titulo-productos {
+  font-weight: 800;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff70a6), to(#ffd670));
+  background: linear-gradient(#ff70a6, #ffd670);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
